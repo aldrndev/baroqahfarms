@@ -35,7 +35,7 @@ export default function AqiqahSection() {
   const phoneNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '6281234567890';
 
   return (
-    <section className="py-24 bg-white relative overflow-hidden" id="aqiqah">
+    <section className="py-24 bg-white relative overflow-hidden scroll-mt-24" id="aqiqah">
       {/* Background decoration */}
       <div className="absolute top-0 left-0 w-full h-[60%] bg-primary-50 rounded-b-[4rem] z-0"></div>
 
@@ -102,14 +102,21 @@ export default function AqiqahSection() {
         </div>
 
         {/* Gambar Tambahan */}
-        <div className="mt-16 flex justify-center">
-          <div className="rounded-2xl overflow-hidden shadow-xl ring-1 ring-slate-900/5 aspect-16/7 max-w-4xl w-full relative">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="rounded-2xl overflow-hidden shadow-xl ring-1 ring-slate-900/5 aspect-4/3 relative group">
             <Image
               src="/images/aqiqah_food.png"
               alt="Hidangan Sate dan Gulai Kambing"
-              width={1000}
-              height={500}
-              className="w-full h-full object-cover"
+              fill
+              className="object-cover group-hover:scale-105 smooth-transition duration-700"
+            />
+          </div>
+          <div className="rounded-2xl overflow-hidden shadow-xl ring-1 ring-slate-900/5 aspect-4/3 relative group">
+            <Image
+              src="/images/rempah_indonesia.png"
+              alt="Bumbu Rempah Autentik Nusantara"
+              fill
+              className="object-cover group-hover:scale-105 smooth-transition duration-700"
             />
           </div>
         </div>

@@ -29,7 +29,7 @@ export default function TestimonialSection() {
   ];
 
   return (
-    <section className="py-24 bg-slate-50 relative overflow-hidden" id="testimoni">
+    <section className="py-24 bg-slate-50 relative overflow-hidden scroll-mt-24" id="testimoni">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-sm font-bold text-accent-600 tracking-wider uppercase mb-3">

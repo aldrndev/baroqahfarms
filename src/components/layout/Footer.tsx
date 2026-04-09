@@ -4,7 +4,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-slate-900 pt-16 pb-8 border-t border-slate-800" id="kontak">
+    <footer className="bg-slate-900 pt-16 pb-8 border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
@@ -89,6 +89,7 @@ export default function Footer() {
               <li className="flex items-start">
                 <MapPin size={18} className="mt-0.5 mr-3 text-primary-500 shrink-0" />
                 <span>
+                  <strong>Baroqah Farms</strong><br />
                   Jl. Villa Jatirasa,
                   <br />
                   Gg Rimban No 68 RT 001/016
@@ -102,7 +103,7 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-slate-800 text-center flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
           <p>&copy; {currentYear} Baroqah Farms. All rights reserved.</p>
-          <p className="mt-2 md:mt-0">Dibangun untuk kenyamanan ibadah Anda.</p>
+          <p className="mt-2 md:mt-0">Dibangun untuk kemudahan qurban, aqiqah dan katering segala acara Anda.</p>
         </div>
       </div>
     </footer>

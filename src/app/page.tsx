@@ -3,6 +3,7 @@ import Header from '@/components/layout/Header';
 import AboutSection from '@/components/sections/AboutSection';
 import AqiqahSection from '@/components/sections/AqiqahSection';
 import CateringSection from '@/components/sections/CateringSection';
+import ContactSection from '@/components/sections/ContactSection';
 import HeroSection from '@/components/sections/HeroSection';
 import QurbanSection from '@/components/sections/QurbanSection';
 import TestimonialSection from '@/components/sections/TestimonialSection';
@@ -19,6 +20,7 @@ export default function Home() {
         <AqiqahSection />
         <CateringSection />
         <TestimonialSection />
+        <ContactSection />
       </main>
       <Footer />
       <WhatsAppButton />

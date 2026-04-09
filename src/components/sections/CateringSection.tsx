@@ -7,7 +7,7 @@ export default function CateringSection() {
   );
 
   return (
-    <section className="py-24 bg-slate-900 text-white relative overflow-hidden" id="katering">
+    <section className="py-24 bg-slate-900 text-white relative overflow-hidden scroll-mt-24" id="katering">
       {/* Dekorasi Visual Latar Belakang */}
       <div className="absolute top-1/2 right-0 w-96 h-96 bg-primary-900 rounded-full filter blur-[100px] opacity-50 transform translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
 
