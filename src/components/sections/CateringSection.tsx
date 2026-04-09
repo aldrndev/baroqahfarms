@@ -20,6 +20,7 @@ export default function CateringSection() {
                   src="/images/katering_prasmanan.png"
                   alt="Prasmanan Katering 1"
                   fill
+                  priority
                   className="object-cover group-hover:scale-105 smooth-transition duration-700"
                 />
               </div>
