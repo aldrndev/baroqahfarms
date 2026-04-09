@@ -1,4 +1,4 @@
-import { Globe, Mail, MapPin, Phone, Share2 } from 'lucide-react';
+import { MapPin, Phone } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -10,28 +10,12 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-1 lg:col-span-1">
             <span className="text-2xl font-bold tracking-tight text-white block mb-2">
-              Kambing Jatiasih
+              Baroqah Farms
             </span>
             <p className="text-slate-400 text-sm leading-relaxed mb-6">
               Layanan profesional, bersih, dan higienis untuk kebutuhan Aqiqah, Qurban, dan Katering
               acara Anda. Dipercaya lebih dari ribuan keluarga di Bekasi.
             </p>
-            <div className="flex space-x-4">
-              <a
-                href="https://instagram.com"
-                className="text-slate-400 hover:text-white smooth-transition"
-                aria-label="Instagram"
-              >
-                <Share2 size={20} />
-              </a>
-              <a
-                href="https://facebook.com"
-                className="text-slate-400 hover:text-white smooth-transition"
-                aria-label="Facebook"
-              >
-                <Globe size={20} />
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -43,7 +27,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#qurban"
-                  className="text-slate-400 hover:text-[--color-primary-400] text-sm smooth-transition"
+                  className="text-slate-400 hover:text-primary-400 text-sm smooth-transition"
                 >
                   Hewan Qurban
                 </a>
@@ -51,7 +35,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#aqiqah"
-                  className="text-slate-400 hover:text-[--color-primary-400] text-sm smooth-transition"
+                  className="text-slate-400 hover:text-primary-400 text-sm smooth-transition"
                 >
                   Paket Aqiqah
                 </a>
@@ -59,7 +43,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#katering"
-                  className="text-slate-400 hover:text-[--color-primary-400] text-sm smooth-transition"
+                  className="text-slate-400 hover:text-primary-400 text-sm smooth-transition"
                 >
                   Katering Acara
                 </a>
@@ -74,33 +58,24 @@ export default function Footer() {
             </h3>
             <ul className="space-y-4 text-sm text-slate-400">
               <li className="flex items-start">
-                <Phone size={18} className="mt-0.5 mr-3 text-[--color-primary-500] shrink-0" />
+                <Phone size={18} className="mt-0.5 mr-3 text-primary-500 shrink-0" />
                 <span>
                   Admin 1:{' '}
                   <a
-                    href="https://wa.me/6281234567890"
+                    href="https://wa.me/6289654886502"
                     className="hover:text-white smooth-transition"
                   >
-                    +62 812-3456-7890
+                    0896 5488 6502
                   </a>
                   <br />
                   Admin 2:{' '}
                   <a
-                    href="https://wa.me/6289876543210"
+                    href="https://wa.me/6285179752974"
                     className="hover:text-white smooth-transition"
                   >
-                    +62 898-7654-3210
+                    0851 7975 2974
                   </a>
                 </span>
-              </li>
-              <li className="flex items-start">
-                <Mail size={18} className="mt-0.5 mr-3 text-[--color-primary-500] shrink-0" />
-                <a
-                  href="mailto:halo@kambingjatiasih.com"
-                  className="hover:text-white smooth-transition"
-                >
-                  halo@kambingjatiasih.com
-                </a>
               </li>
             </ul>
           </div>
@@ -112,7 +87,7 @@ export default function Footer() {
             </h3>
             <ul className="space-y-4 text-sm text-slate-400">
               <li className="flex items-start">
-                <MapPin size={18} className="mt-0.5 mr-3 text-[--color-primary-500] shrink-0" />
+                <MapPin size={18} className="mt-0.5 mr-3 text-primary-500 shrink-0" />
                 <span>
                   Jl. Villa Jatirasa,
                   <br />
@@ -126,7 +101,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-slate-800 text-center flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
-          <p>&copy; {currentYear} Kambing Jatiasih. All rights reserved.</p>
+          <p>&copy; {currentYear} Baroqah Farms. All rights reserved.</p>
           <p className="mt-2 md:mt-0">Dibangun untuk kenyamanan ibadah Anda.</p>
         </div>
       </div>

@@ -7,7 +7,7 @@ export default function WhatsAppButton() {
   const [isVisible, setIsVisible] = useState(false);
   const phoneNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '6281234567890';
   const defaultMessage = encodeURIComponent(
-    'Halo Kambing Jatiasih, saya ingin bertanya tentang layanan Qurban/Aqiqah/Katering.',
+    'Halo Baroqah Farms, saya ingin bertanya tentang layanan Qurban/Aqiqah/Katering.',
   );
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${defaultMessage}`;
 

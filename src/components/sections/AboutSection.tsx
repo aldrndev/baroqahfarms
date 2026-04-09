@@ -29,26 +29,26 @@ export default function AboutSection() {
         <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
           {/* Text Content */}
           <div className="mb-12 lg:mb-0">
-            <h2 className="text-sm font-bold text-[--color-primary-600] tracking-wider uppercase mb-3">
+            <h2 className="text-sm font-bold text-primary-600 tracking-wider uppercase mb-3">
               Mengapa Memilih Kami?
             </h2>
             <h3 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-6">
               Amanah Keluarga Anda adalah Prioritas Kami
             </h3>
             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-              Berpusat di Jatiasih, Bekasi, Kambing Jatiasih hadir memberikan solusi ibadah dan
-              acara syukuran Anda. Kami bukan sekadar penjual, tapi mitra ibadah yang ingin
-              memastikan setiap tetes keringat kita bernilai pahala.
+              Berpusat di Jatiasih, Bekasi, Baroqah Farms hadir memberikan solusi ibadah dan acara
+              syukuran Anda. Kami bukan sekadar penjual, tapi mitra ibadah yang ingin memastikan
+              setiap tetes keringat kita bernilai pahala.
             </p>
 
             <dl className="mt-10 space-y-8">
               {features.map((feature) => (
                 <div
                   key={feature.name}
-                  className="relative pl-12 shadow-sm p-4 rounded-xl border border-slate-100 bg-slate-50 hover:border-[--color-primary-200] smooth-transition"
+                  className="relative pl-12 shadow-sm p-4 rounded-xl border border-slate-100 bg-slate-50 hover:border-primary-200 smooth-transition"
                 >
                   <dt className="text-lg font-bold text-slate-900">
-                    <feature.icon className="absolute left-4 top-4 h-6 w-6 text-[--color-primary-500]" />
+                    <feature.icon className="absolute left-4 top-4 h-6 w-6 text-primary-500" />
                     {feature.name}
                   </dt>
                   <dd className="mt-1 text-base text-slate-600 leading-relaxed">
@@ -61,9 +61,9 @@ export default function AboutSection() {
 
           {/* Image/Visual */}
           <div className="relative">
-            <div className="rounded-2xl overflow-hidden shadow-xl ring-1 ring-slate-900/5 aspect-w-4 aspect-h-5 object-cover">
+            <div className="rounded-2xl overflow-hidden shadow-xl ring-1 ring-slate-900/5 aspect-4/5 relative">
               <Image
-                src="https://images.unsplash.com/photo-1594916960098-b8054bcaf23b?auto=format&fit=crop&q=80&w=1200"
+                src="/images/about_farm.png"
                 alt="Peternakan bersih"
                 width={600}
                 height={800}
@@ -73,8 +73,8 @@ export default function AboutSection() {
 
             {/* Floating Badge */}
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-lg border border-slate-100 flex items-center space-x-4">
-              <div className="flex-shrink-0 bg-[--color-primary-100] rounded-full p-3">
-                <CheckCircle className="h-6 w-6 text-[--color-primary-600]" />
+              <div className="shrink-0 bg-primary-100 rounded-full p-3">
+                <CheckCircle className="h-6 w-6 text-primary-600" />
               </div>
               <div>
                 <p className="font-bold text-slate-900 text-xl">100%</p>

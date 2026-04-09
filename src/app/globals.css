@@ -29,6 +29,26 @@
 :root {
   --background: #f9fafb;
   --foreground: #1f2937;
+
+  --color-primary-50: #ecfdf5;
+  --color-primary-100: #d1fae5;
+  --color-primary-500: #10b981;
+  --color-primary-600: #059669;
+  --color-primary-700: #047857;
+  --color-primary-800: #065f46;
+  --color-primary-900: #064e3b;
+
+  --color-accent-500: #f59e0b;
+  --color-accent-600: #d97706;
+
+  --color-whatsapp: #25d366;
+  --color-whatsapp-hover: #128c7e;
+
+  --color-surface: #f9fafb;
+  --color-surface-elevated: #ffffff;
+  
+  --color-text-main: #1f2937;
+  --color-text-muted: #6b7280;
 }
 
 body {

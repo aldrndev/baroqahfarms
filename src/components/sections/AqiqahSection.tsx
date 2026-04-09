@@ -5,11 +5,11 @@ export default function AqiqahSection() {
   const packages = [
     {
       name: 'Paket Anak Perempuan',
-      price: 'Rp 2.500.000',
+      price: 'Mulai Rp 2.500.000',
       description: 'Layanan Aqiqah lengkap untuk anak perempuan (1 ekor kambing/domba).',
       features: [
         '1 Ekor Kambing/Domba Sehat (Termasuk Potong)',
-        '200 Tusuk Sate & 50 Porsi Gulai',
+        'Hingga 200 Tusuk Sate & Hingga 50 Porsi Gulai',
         'Sertifikat Aqiqah Eksklusif',
         'Dokumentasi Pemotongan (Video/Foto)',
         'Gratis Pengiriman Jatiasih & Sekitarnya',
@@ -18,11 +18,11 @@ export default function AqiqahSection() {
     },
     {
       name: 'Paket Anak Laki-Laki',
-      price: 'Rp 4.900.000',
+      price: 'Mulai Rp 4.900.000',
       description: 'Layanan Aqiqah langkap untuk anak laki-laki (2 ekor kambing/domba).',
       features: [
         '2 Ekor Kambing/Domba Sehat (Termasuk Potong)',
-        '400 Tusuk Sate & 100 Porsi Gulai',
+        'Hingga 400 Tusuk Sate & Hingga 100 Porsi Gulai',
         'Sertifikat Aqiqah Eksklusif & Pigura',
         'Cetak Foto Polaroid Bayi',
         'Dokumentasi Pemotongan lengkap',
@@ -37,7 +37,7 @@ export default function AqiqahSection() {
   return (
     <section className="py-24 bg-white relative overflow-hidden" id="aqiqah">
       {/* Background decoration */}
-      <div className="absolute top-0 left-0 w-full h-1/2 bg-[--color-primary-50] -skew-y-2 transform -translate-y-10 z-0"></div>
+      <div className="absolute top-0 left-0 w-full h-[60%] bg-primary-50 rounded-b-[4rem] z-0"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -58,17 +58,17 @@ export default function AqiqahSection() {
                 key={pkg.name}
                 className={`rounded-2xl shadow-lg overflow-hidden border smooth-transition flex flex-col ${
                   pkg.popular
-                    ? 'border-[--color-primary-500] ring-2 ring-[--color-primary-500] ring-opacity-50 relative transform md:-translate-y-4'
-                    : 'border-slate-100 bg-white hover:border-[--color-primary-300]'
+                    ? 'border-primary-500 ring-2 ring-primary-500 ring-opacity-50 relative transform md:-translate-y-4'
+                    : 'border-slate-100 bg-white hover:border-primary-300'
                 }`}
               >
                 {pkg.popular && (
-                  <div className="absolute top-0 right-0 bg-[--color-primary-500] text-white text-xs font-bold px-3 py-1 uppercase tracking-wider rounded-bl-lg">
+                  <div className="absolute top-0 right-0 bg-primary-500 text-white text-xs font-bold px-3 py-1 uppercase tracking-wider rounded-bl-lg">
                     Paling Diminati
                   </div>
                 )}
 
-                <div className={`p-8 ${pkg.popular ? 'bg-[--color-primary-50]' : 'bg-white'}`}>
+                <div className={`p-8 ${pkg.popular ? 'bg-primary-50' : 'bg-white'}`}>
                   <h3 className="text-2xl font-bold text-slate-900 mb-2">{pkg.name}</h3>
                   <p className="text-slate-600 mb-6 min-h-[48px]">{pkg.description}</p>
                   <div className="flex items-baseline">
@@ -76,11 +76,11 @@ export default function AqiqahSection() {
                   </div>
                 </div>
 
-                <div className="p-8 bg-white border-t border-slate-100 flex flex-col flex-grow">
-                  <ul className="space-y-4 mb-8 flex-grow">
+                <div className="p-8 bg-white border-t border-slate-100 flex flex-col grow">
+                  <ul className="space-y-4 mb-8 grow">
                     {pkg.features.map((feature) => (
                       <li key={feature} className="flex items-start">
-                        <Check className="flex-shrink-0 h-5 w-5 text-[--color-primary-500] mr-3" />
+                        <Check className="shrink-0 h-5 w-5 text-primary-500 mr-3" />
                         <span className="text-slate-600 font-medium">{feature}</span>
                       </li>
                     ))}
@@ -89,7 +89,7 @@ export default function AqiqahSection() {
                     href={`https://wa.me/${phoneNumber}?text=${waText}`}
                     className={`block w-full text-center py-4 px-6 rounded-xl text-base font-bold smooth-transition ${
                       pkg.popular
-                        ? 'bg-[--color-primary-600] text-white hover:bg-[--color-primary-700] shadow-md'
+                        ? 'bg-primary-600 text-white hover:bg-primary-700 shadow-md'
                         : 'bg-slate-100 text-slate-900 hover:bg-slate-200'
                     }`}
                   >
@@ -103,9 +103,9 @@ export default function AqiqahSection() {
 
         {/* Gambar Tambahan */}
         <div className="mt-16 flex justify-center">
-          <div className="rounded-2xl overflow-hidden shadow-xl ring-1 ring-slate-900/5 aspect-w-16 aspect-h-7 max-w-4xl w-full">
+          <div className="rounded-2xl overflow-hidden shadow-xl ring-1 ring-slate-900/5 aspect-16/7 max-w-4xl w-full relative">
             <Image
-              src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=1200"
+              src="/images/aqiqah_food.png"
               alt="Hidangan Sate dan Gulai Kambing"
               width={1000}
               height={500}
