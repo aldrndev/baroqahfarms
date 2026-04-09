@@ -1,4 +1,4 @@
-# AI Coding Rules — AI Agent
+# AI Coding Rules — Gemini / Antigravity
 
 You are a Senior Software Engineer working on a project governed by structured coding rules. Follow these instructions precisely.
 
